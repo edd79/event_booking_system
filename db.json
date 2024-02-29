@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "id": "3a90",
+      "name": "mojito_bash",
+      "vipTicketPrice": "890",
+      "regularTicketPrice": "450",
+      "maxAttendees": "100"
+    },
+    {
+      "id": "5d85",
+      "name": "project-drive",
+      "vipTicketPrice": "7800",
+      "regularTicketPrice": "6500",
+      "maxAttendees": "400"
+    },
+    {
+      "id": "d5a3",
+      "name": "test_event",
+      "vipTicketPrice": "5600",
+      "regularTicketPrice": "4500",
+      "maxAttendees": "560"
+    },
+    {
+      "id": "0373",
+      "name": "new_event",
+      "vipTicketPrice": "7800",
+      "regularTicketPrice": "4650",
+      "maxAttendees": "675"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "013c",
+      "eventId": null,
+      "vipTickets": "1",
+      "regularTickets": "3"
+    },
+    {
+      "id": "28f2",
+      "eventId": "3a90",
+      "vipTickets": 0,
+      "regularTickets": 0
+    },
+    {
+      "id": "5377",
+      "eventId": "0373",
+      "vipTickets": "897",
+      "regularTickets": "4"
+    }
+  ]
+}
