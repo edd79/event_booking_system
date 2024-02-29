@@ -1,6 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ticket_reservation_system
+This is a frontend implementation for the event booking website in React.js
+The mock database is in the db.json. 
+Install the necessary node modules by running "npm install" after cloning the repo
+Run the project using "npm run start" and "npm run server"
 
 ## Available Scripts
 
