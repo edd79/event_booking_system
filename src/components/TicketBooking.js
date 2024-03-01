@@ -49,7 +49,7 @@ class TicketBooking extends Component {
               name="vipTickets"
               value={vipTickets}
               onChange={this.handleInputChange}
-              min="1"
+              min="0"
               max="5"
             />
           </label>
@@ -61,7 +61,7 @@ class TicketBooking extends Component {
               name="regularTickets"
               value={regularTickets}
               onChange={this.handleInputChange}
-              min="1"
+              min="0"
               max="5"
             />
           </label>

@@ -279,6 +279,13 @@ body {
   background-color: var(--color3);
 }
 
+.reservations-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
 .modal {
   background-color: var(--color5);
   color: var(--color1);

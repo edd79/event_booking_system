@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
+import Reservations from './Reservations';
 
 class Admin extends Component {
   state = {
@@ -12,6 +13,7 @@ class Admin extends Component {
     maxAttendees: '',
     editMode: false,
     eventIdToEdit: null,
+    showReservations: false,
   };
 
   componentDidMount() {
@@ -77,6 +79,10 @@ class Admin extends Component {
     this.fetchEvents();
   };
 
+  toggleReservations = () => {
+  this.setState(prevState => ({ showReservations: !prevState.showReservations }));
+};
+
   render() {
     const { events, name, vipTicketPrice, regularTicketPrice, maxAttendees, editMode } = this.state;
 
@@ -121,6 +127,12 @@ class Admin extends Component {
           />
           <button type="submit" className='admin-button'>{editMode ? 'Update' : 'Add'} Event</button>
         </form>
+
+        <button onClick={this.toggleReservations}>
+          {this.state.showReservations ? 'Hide Reservations' : 'Show Reservations'}
+        </button>
+
+        {this.state.showReservations && <Reservations />}
 
         <ul className='admin-event-list'>
           {events.map((event) => (

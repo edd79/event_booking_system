@@ -1,78 +1,79 @@
 {
   "events": [
     {
-      "id": "3a90",
-      "name": "mojito_bash",
-      "vipTicketPrice": "890",
-      "regularTicketPrice": "450",
+      "id": "a135",
+      "name": "Event A",
+      "vipTicketPrice": "6700",
+      "regularTicketPrice": "5500",
       "maxAttendees": "100"
     },
     {
-      "name": "project-drive",
-      "vipTicketPrice": "7800",
-      "regularTicketPrice": "6500",
-      "maxAttendees": "350",
-      "id": "5d85"
-    },
-    {
-      "id": "d5a3",
-      "name": "test_event",
+      "id": "207d",
+      "name": "Event B",
       "vipTicketPrice": "5600",
-      "regularTicketPrice": "4500",
-      "maxAttendees": "560"
+      "regularTicketPrice": "3400",
+      "maxAttendees": "345"
     },
     {
-      "id": "0373",
-      "name": "new_event",
-      "vipTicketPrice": "7800",
-      "regularTicketPrice": "4650",
-      "maxAttendees": "675"
+      "id": "55a1",
+      "name": "Event C",
+      "vipTicketPrice": "7600",
+      "regularTicketPrice": "5600",
+      "maxAttendees": "345"
     },
     {
-      "id": "03a8",
-      "name": "admins_event",
-      "vipTicketPrice": "9800",
-      "regularTicketPrice": "7600",
-      "maxAttendees": "235"
+      "name": "Event D",
+      "vipTicketPrice": "8700",
+      "regularTicketPrice": "4560",
+      "maxAttendees": "230",
+      "id": "2b7d"
     },
     {
-      "id": "2ee8",
-      "name": "user_event",
+      "id": "51ab",
+      "name": "Event E",
       "vipTicketPrice": "3400",
-      "regularTicketPrice": "2300",
-      "maxAttendees": "670"
+      "regularTicketPrice": "2350",
+      "maxAttendees": "100"
+    },
+    {
+      "id": "0ba1",
+      "name": "Event F",
+      "vipTicketPrice": "8750",
+      "regularTicketPrice": "4500",
+      "maxAttendees": "300"
+    },
+    {
+      "id": "f186",
+      "name": "Event G",
+      "vipTicketPrice": "6750",
+      "regularTicketPrice": "3450",
+      "maxAttendees": "250"
     }
   ],
   "reservations": [
     {
-      "id": "013c",
-      "eventId": null,
-      "vipTickets": "1",
-      "regularTickets": "3"
-    },
-    {
-      "id": "28f2",
-      "eventId": "3a90",
+      "id": "8507",
+      "eventId": "2b7d",
       "vipTickets": 0,
-      "regularTickets": 0
-    },
-    {
-      "id": "5377",
-      "eventId": "0373",
-      "vipTickets": "897",
       "regularTickets": "4"
     },
     {
-      "id": "c245",
-      "eventId": "03a8",
-      "vipTickets": "5",
-      "regularTickets": "3"
+      "id": "5249",
+      "eventId": "51ab",
+      "vipTickets": "3",
+      "regularTickets": 0
     },
     {
-      "id": "5fb8",
-      "eventId": "5d85",
-      "vipTickets": "4",
-      "regularTickets": "3"
+      "id": "5c7c",
+      "eventId": "2b7d",
+      "vipTickets": "1",
+      "regularTickets": "4"
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "pass1234"
     }
   ]
 }
