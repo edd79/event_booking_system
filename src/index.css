@@ -286,6 +286,12 @@ body {
   justify-content: center;
 }
 
+.footer-text{
+  text-align: center;
+  padding: 20px;
+  color: rgb(10, 10, 10);
+
+}
 .modal {
   background-color: var(--color5);
   color: var(--color1);

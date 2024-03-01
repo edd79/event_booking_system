@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 class EventList extends Component {
   state = {
@@ -22,22 +23,6 @@ class EventList extends Component {
     const { events } = this.state;
 
     return (
-      // <div>
-      //   {/* <Link to="/admin">Admin Panel</Link> */}
-      //   <Navbar />
-      //   <h1>Event List</h1>
-      //   <ul>
-      //     {events.map((event) => (
-      //       <li key={event.id}>
-      //         <h2>{event.name}</h2>
-      //         <p>VIP Ticket Price: Ksh {event.vipTicketPrice}</p>
-      //         <p>Regular Ticket Price: Ksh {event.regularTicketPrice}</p>
-      //         <p>Max Attendees: {event.maxAttendees}</p>
-      //         <Link to={`/event/${event.id}`}>View Details</Link>
-      //       </li>
-      //     ))}
-      //   </ul>
-      // </div>
       <div>
         <Navbar />
         <h1>Active Events</h1>
@@ -52,6 +37,7 @@ class EventList extends Component {
             </div>
           ))}
         </div>
+        <Footer />
       </div>
     );
   }

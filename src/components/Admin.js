@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
 import Reservations from './Reservations';
+import Footer from './Footer';
 
 class Admin extends Component {
   state = {
@@ -88,7 +89,6 @@ class Admin extends Component {
 
     return (
       <div className='admin-panel'>
-        {/* <Link to="/">Event List</Link> */}
         <Navbar />
         <h1 className='admin-title'>Admin Panel</h1>
 
@@ -148,6 +148,7 @@ class Admin extends Component {
           </li>
       ))}
         </ul>
+        <Footer />
       </div>
     );
   }
