@@ -1,7 +1,7 @@
 // components/Admin.js
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 class Admin extends Component {
   state = {
@@ -81,11 +81,12 @@ class Admin extends Component {
     const { events, name, vipTicketPrice, regularTicketPrice, maxAttendees, editMode } = this.state;
 
     return (
-      <div>
-        <Link to="/">Event List</Link>
-        <h1>Admin Panel</h1>
+      <div className='admin-panel'>
+        {/* <Link to="/">Event List</Link> */}
+        <Navbar />
+        <h1 className='admin-title'>Admin Panel</h1>
 
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className='admin-form'>
           <input
             type="text"
             name="name"
@@ -118,17 +119,22 @@ class Admin extends Component {
             placeholder="Max Attendees"
             required
           />
-          <button type="submit">{editMode ? 'Update' : 'Add'} Event</button>
+          <button type="submit" className='admin-button'>{editMode ? 'Update' : 'Add'} Event</button>
         </form>
 
-        <ul>
+        <ul className='admin-event-list'>
           {events.map((event) => (
-            <li key={event.id}>
-              {event.name} - VIP: ${event.vipTicketPrice} - Regular: ${event.regularTicketPrice} - Max: {event.maxAttendees}
-              <button onClick={() => this.handleEdit(event)}>Edit</button>
-              <button onClick={() => this.handleDelete(event.id)}>Delete</button>
-            </li>
-          ))}
+          <li key={event.id} className="admin-event-item">
+          <div className="event-actions">
+            <button onClick={() => this.handleEdit(event)} className='button-edit'>Edit</button>
+            <button onClick={() => this.handleDelete(event.id)} className='button-delete'>Delete</button>
+          </div>
+          <h2>{event.name}</h2>
+          <p>VIP: Ksh {event.vipTicketPrice}</p>
+          <p>Regular: Ksh {event.regularTicketPrice}</p>
+          <p>Max: {event.maxAttendees}</p>
+          </li>
+      ))}
         </ul>
       </div>
     );

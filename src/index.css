@@ -1,13 +1,285 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color1: #03045E;
+  --color2: #0077B6;
+  --color3: #00B4D8;
+  --color4: #90E0EF;
+  --color5: #CAF0F8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: rgba(8, 8, 209, 0.596);
+  color: rgba(2, 15, 44, 0.527);
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgba(8, 8, 209, 0.596);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  color: var(--color5);
+}
+
+.links {
+  display: flex;
+}
+
+.nav-link {
+  color: var(--color5);
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color4);
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.nav-link:hover {
+  color: var(--color4);
+}
+
+
+
+.admin-link {
+  background-color: var(--color3);
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.admin-link:hover {
+  background-color: var(--color4);
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.event-card {
+  background-color: var(--color5);
+  color: var(--color1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.event-title {
+  margin: 0 0 10px;
+  color: var(--color2);
+}
+
+.details-link {
+  color: var(--color3);
+  text-decoration: none;
+}
+
+.details-link:hover {
+  color: var(--color4);
+}
+
+.admin-panel {
+  background-color: var(--color2);
+  color: var(--color5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-title {
+  margin: 0 0 20px;
+}
+
+.admin-form {
+  background-color: var(--color5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admin-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.admin-form input,
+.admin-form textarea {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color3);
+  margin-bottom: 10px;
+}
+
+.admin-form input[type="submit"] {
+  width: auto;
+  background-color: var(--color3);
+  color: var(--color5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-form input[type="submit"]:hover {
+  background-color: var(--color4);
+}
+
+.admin-form .admin-button {
+  background-color: rgb(84, 245, 84);
+  color: rgb(10, 10, 10);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-button {
+  background-color: var(--color3);
+  color: var(--color5);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-button:hover {
+  background-color: var(--color4);
+}
+
+.admin-event-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.admin-event-item {
+  background-color: var(--color1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 60px;
+  padding-right: 60px;
+  position: relative;
+}
+
+.admin-event-item .event-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.admin-event-item h2 {
+  margin: 0 0 10px;
+}
+
+.admin-event-item button {
+  background-color: var(--color3);
+  color: var(--color5);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-event-item .button-delete {
+  background-color: red;
+}
+
+.admin-event-item .button-delete:hover {
+  background-color: darkred;
+}
+
+.admin-event-item button:hover {
+  background-color: var(--color4);
+}
+
+.ticket-booking {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.ticket-booking h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ticket-booking form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-booking label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ticket-booking input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ticket-booking button {
+  padding: 10px 20px;
+  background-color: rgb(84, 245, 84);;
+  color: rgb(10, 10, 10);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.ticket-booking button:hover {
+  background-color: rgb(11, 114, 11);;
+}
+
+.back-to-events {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color2);
+  color: var(--color5);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.back-to-events:hover {
+  background-color: var(--color3);
+}
+
+.modal {
+  background-color: var(--color5);
+  color: var(--color1);
 }

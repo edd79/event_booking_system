@@ -38,7 +38,7 @@ class TicketBooking extends Component {
     const { vipTickets, regularTickets } = this.state;
 
     return (
-      <div>
+      <div className='ticket-booking'>
         <h1>Reserve Tickets</h1>
 
         <form onSubmit={this.handleSubmit}>
@@ -49,7 +49,8 @@ class TicketBooking extends Component {
               name="vipTickets"
               value={vipTickets}
               onChange={this.handleInputChange}
-              min="0"
+              min="1"
+              max="5"
             />
           </label>
 
@@ -60,7 +61,8 @@ class TicketBooking extends Component {
               name="regularTickets"
               value={regularTickets}
               onChange={this.handleInputChange}
-              min="0"
+              min="1"
+              max="5"
             />
           </label>
 

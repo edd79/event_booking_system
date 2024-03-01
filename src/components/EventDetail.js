@@ -49,6 +49,7 @@ import { useParams } from 'react-router-dom';
 import TicketBooking from './TicketBooking';
 import { Link } from 'react-router-dom';
 
+
 function EventDetail() {
   const [event, setEvent] = useState(null);
   const { id } = useParams();
@@ -72,7 +73,7 @@ function EventDetail() {
 
   return (
     <div>
-    <Link to="/">Back to Events</Link>
+    <Link to="/" className="back-to-events">Back to Events</Link>
       <h1>{event.name}</h1>
       <p>VIP Ticket Price: Ksh {event.vipTicketPrice}</p>
       <p>Regular Ticket Price: Ksh {event.regularTicketPrice}</p>

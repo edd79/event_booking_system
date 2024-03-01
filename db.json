@@ -8,11 +8,11 @@
       "maxAttendees": "100"
     },
     {
-      "id": "5d85",
       "name": "project-drive",
       "vipTicketPrice": "7800",
       "regularTicketPrice": "6500",
-      "maxAttendees": "400"
+      "maxAttendees": "350",
+      "id": "5d85"
     },
     {
       "id": "d5a3",
@@ -27,6 +27,20 @@
       "vipTicketPrice": "7800",
       "regularTicketPrice": "4650",
       "maxAttendees": "675"
+    },
+    {
+      "id": "03a8",
+      "name": "admins_event",
+      "vipTicketPrice": "9800",
+      "regularTicketPrice": "7600",
+      "maxAttendees": "235"
+    },
+    {
+      "id": "2ee8",
+      "name": "user_event",
+      "vipTicketPrice": "3400",
+      "regularTicketPrice": "2300",
+      "maxAttendees": "670"
     }
   ],
   "reservations": [
@@ -47,6 +61,18 @@
       "eventId": "0373",
       "vipTickets": "897",
       "regularTickets": "4"
+    },
+    {
+      "id": "c245",
+      "eventId": "03a8",
+      "vipTickets": "5",
+      "regularTickets": "3"
+    },
+    {
+      "id": "5fb8",
+      "eventId": "5d85",
+      "vipTickets": "4",
+      "regularTickets": "3"
     }
   ]
 }
